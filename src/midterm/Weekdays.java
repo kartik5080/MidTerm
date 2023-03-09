@@ -9,29 +9,30 @@ package midterm;
  * @author Asus
  */
 public class Weekdays {
-    public void nameOfDay(String code)
+    public enum Days{MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY};
+    public void nameOfDay(Days days)
      {
-    switch(code.toUpperCase())
+    switch(days)
       {
-      case "ONE":
+      case MONDAY:
         System.out.println("Monday");
         break;
-      case "TWO":
+      case TUESDAY:
         System.out.println("Tuesday");
         break;
-      case "THREE":
+      case WEDNESDAY:
         System.out.println("Wednesday");
         break;
-      case "FOUR":
+      case THURSDAY:
         System.out.println("Thursday");
         break;
-      case "FIVE":
+      case FRIDAY:
         System.out.println("Friday");
         break;
-      case "SIX":
+      case SATURDAY:
         System.out.println("Saturday");
         break;
-      case "SEVEN":
+      case SUNDAY:
         System.out.println("Sunday");
         break;
     }

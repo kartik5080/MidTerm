@@ -5,6 +5,7 @@
 package midterm;
 
 import java.util.Scanner;
+import midterm.Weekdays.Days;
 
 /**
  *
@@ -18,10 +19,14 @@ public class MidTerm {
   public static void main(String[] args) {
          
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the day number (one,two,three,four,five) in string");
-    String code = in.next();
+    System.out.println("Enter the day MONDAY TUEDAY  till Sunday.....");
+    Days days = Days.valueOf(in.next().toUpperCase());
+    
+   
     Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
+   
+    t.nameOfDay(days);
+    
     }// TODO code application logic here
     
     
